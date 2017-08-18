@@ -18,11 +18,11 @@ while [ $# -gt 0 ]; do
             docker-compose exec ubuntu16 ansible-playbook -i 'localhost,' -c local /etc/ansible/roles/$role/tests/test.yml
         ;;
         verify)
-            docker-compose exec ubuntu14 compass --version
-            docker-compose exec ubuntu16 compass --version
+            docker-compose exec ubuntu14 nvm --version
+            docker-compose exec ubuntu16 nvm --version
         ;;
         stop)
-            docker-compose stop
+            docker-compose down
         ;;
     esac
     shift
