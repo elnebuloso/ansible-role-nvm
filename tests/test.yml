@@ -2,4 +2,17 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-role-nvm
+    - role: ansible-role-nvm
+      nvm_create_users: []
+      nvm_user: "root"
+      nvm_version: "v0.33.1"
+      nvm_node_versions:
+        - "6.11.2"
+
+    - role: ansible-role-nvm
+      nvm_create_users:
+        - {user: foo, group: foo}
+      nvm_user: "foo"
+      nvm_version: "v0.33.2"
+      nvm_node_versions:
+        - "8.4.0"

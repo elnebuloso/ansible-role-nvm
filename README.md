@@ -13,7 +13,7 @@ This role requires Ansible 2.0 or higher, and platform requirements are listed i
 
 ## Role Variables
 
-None.
+- [`defaults/main.yml`](https://github.com/elnebuloso/ansible-role-nvm/blob/master/defaults/main.yml)
 
 ## Example Playbook
 
@@ -21,6 +21,12 @@ None.
 - hosts: localhost
   roles:
     - role: elnebuloso.nvm
+      nvm_user: "root"
+      nvm_version: "v0.33.2"
+      nvm_node_versions:
+        - "6.11.2"
+        - "7.10.1"
+        - "8.4.0"
 ```
 
 ## Dependencies
@@ -33,4 +39,4 @@ MIT
 
 ##  Author Information
 
-This role was created in 2016 by [elnebuloso](https://github.com/elnebuloso/)
+This role was created in 2017 by [elnebuloso](https://github.com/elnebuloso/)

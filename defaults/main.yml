@@ -1,0 +1,8 @@
+---
+nvm_create_users: []
+nvm_user: "root"
+nvm_version: "v0.33.2"
+nvm_node_versions:
+  - "6.11.2"
+  - "7.10.1"
+  - "8.4.0"
