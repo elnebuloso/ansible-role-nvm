@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  ubuntu14:
+    image: elnebuloso/ansible:ubuntu14-1.3.0
+    volumes:
+      - .:/etc/ansible/roles/ansible-role-nvm
+
+  ubuntu16:
+    image: elnebuloso/ansible:ubuntu16-1.3.0
+    volumes:
+      - .:/etc/ansible/roles/ansible-role-nvm
