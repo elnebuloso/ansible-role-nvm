@@ -1,5 +1,6 @@
 ---
 nvm_create_users: []
+nvm_git_force: "no"
 nvm_user: "root"
 nvm_version: "v0.33.2"
 nvm_node_versions:

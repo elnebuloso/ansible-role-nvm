@@ -22,7 +22,7 @@
 - name: "install nvm"
   become: yes
   become_user: "{{ nvm_user }}"
-  git: repo=https://github.com/creationix/nvm.git dest=~/.nvm version={{ nvm_version }}
+  git: repo=https://github.com/creationix/nvm.git dest=~/.nvm version={{ nvm_version }} force={{nvm_git_force}}
 
 - name: source nvm in ~/.bashrc
   become: yes
